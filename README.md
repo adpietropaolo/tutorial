@@ -23,9 +23,8 @@ flowchart TD
     end
 
     subgraph E1 [Details]
-        E1.1[Extract and analyze free energy differences]
+        E1.1[Extract and analyze dihedral angles in each electronic state]
         E1.2[Use PLUMED tools for analysis]
-        E1.3[Validate results by checking convergence]
     end
 
     A --> A1
