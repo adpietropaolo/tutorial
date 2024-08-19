@@ -1,4 +1,4 @@
-``mermaid
+```mermaid
 flowchart LR
 A[The method intro] ==> B[Lecture I]
 B ==> C[Instructions]
