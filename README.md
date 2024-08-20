@@ -1,33 +1,30 @@
-```mermaid
-flowchart TD
-    A[Prepare the System] --> B[Set Up FEP]
-    B --> C[Integrate with PLUMED]
-    C --> D[Run the Simulation]
-    D --> E[Analyze the Results]
-    E --> F[Post-Processing]
+# Steps to Run FEP/Plumed Simulations
 
-    subgraph A1 [Details]
-        A1.1[Generate topology and coordinate files]
-        A1.2[Perform energy minimization and equilibration]
-    end
+To run a FEP/Plumed simulation, you need to follow these steps:
 
-    subgraph B1 [Details]
-        B1.1[Define initial and final states]
-        B1.2[Prepare FEP input files]
-        B1.3[Specify lambda values and parameters]
-    end
+1. **Prepare the System:**
+   - Ensure that your molecular system is correctly prepared.
+   - Generate topology and coordinate files.
+   - Perform energy minimization and equilibration.
 
-    subgraph C1 [Details]
-        C1.1[Write PLUMED input file with CVs]
-        C1.2[Define biasing potential and run metadynamics]
-    end
+2. **Set Up the Free Energy Perturbation (FEP):**
+   - Define the initial and final states of the system.
+   - Prepare the necessary input files for the FEP calculation.
+   - Specify the lambda values and related parameters.
 
-    subgraph E1 [Details]
-        E1.1[Extract and analyze dihedral angles in each electronic state]
-        E1.2[Use PLUMED tools for analysis]
-    end
+3. **Integrate with PLUMED:**
+   - Write the PLUMED input file using as CVs the dihedrals that undergo trans-cis isomerization for each value of lambda.
+   - Define the biasing potential or metadynamics setup in PLUMED.
 
-    A --> A1
-    B --> B1
-    C --> C1
-    E --> E1
+4. **Run the Simulation:**
+   - Use your molecular dynamics software to run the simulation with the PLUMED plugin.
+   - Monitor the simulation to ensure it progresses correctly.
+
+5. **Analyze the Results:**
+   - Extract and analyze the free energy differences from the FEP simulation.
+   - Use PLUMED tools to analyze collective variables and bias potentials.
+   - Validate the results by checking convergence and consistency.
+
+6. **Post-Processing:**
+   - Visualize the simulation data.
+   - Document and interpret the findings.
