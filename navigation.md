@@ -1,8 +1,8 @@
 ```mermaid
 flowchart LR
 A[The method intro] ==> B[Lecture I]
-B ==> C[Instructions]
-C ==> D[example of plumed.dat]
+B ==> C[The lecture slides]
+C ==> D[Instructions]
 D ==> E[solution]
 click A "mypaper" "The paper related to the Multi-replica biased sampling for Trans-cis isomerization in the ground and excited states using PLUMED"
 click B "Slide.pdf" "The lecture slides"
