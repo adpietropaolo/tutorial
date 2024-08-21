@@ -4,11 +4,11 @@ This lesson intends to show ho to combine PLUMED with your MD code to simulate d
 
 In this tutorial you will find:
 
-*The reference paper.
-*The slides of the simulation workflow.
-*The instructions on how to setup the simulations.
-*The plumed input file.
-*A python notebook with a solution useful to complete the exercise.
+* The reference paper.
+* The slides of the simulation workflow.
+* The instructions on how to setup the simulations.
+* The plumed input file.
+* A python notebook with a solution useful to complete the exercise.
 
 The flow chart shown below indicates the order in which you should consult the resources.
 You can click on the nodes to access the various resources.
